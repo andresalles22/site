@@ -1,0 +1,536 @@
+/*
+ *--------------------------------------------------------------------------
+ * Font Faces
+ *--------------------------------------------------------------------------
+ */
+
+@font-face {
+	font-family: Anothershabby;
+	src: url(../fonts/Anothershabby/Anothershabby_trial.ttf);
+}
+
+@font-face {
+	font-family: FordAntenna;
+	src: url(../fonts/FordAntenna/FordAntenna-Regular.otf);
+}
+
+@font-face {
+	font-family: FordAntenna;
+	font-style: italic;
+	src: url(../fonts/FordAntenna/FordAntenna-RegularItalic.otf);
+}
+
+@font-face {
+	font-family: FordAntenna;
+	font-weight: bold;
+	src: url(../fonts/FordAntenna/FordAntenna-Bold.otf);
+}
+
+@font-face {
+	font-family: FordAntenna;
+	font-weight: bold;
+	font-style: italic;
+	src: url(../fonts/FordAntenna/FordAntenna-BoldItalic.otf);
+}
+
+/*
+ *--------------------------------------------------------------------------
+ * Global
+ *--------------------------------------------------------------------------
+ */
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: 'FordAntenna', 'Arial', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Anothershabby', sans-serif;
+	color: #626262;
+	line-height: 1.2em;
+}
+
+p {
+	font-family: 'FordAntenna', 'Arial', sans-serif;
+	color: #626262;
+	line-height: 1.8em;
+	font-size: 14px;
+}
+
+small {
+	font-family: 'FordAntenna', 'Arial', sans-serif;
+	color: #626262;
+	line-height: 1.5em;
+	font-size: 12px;
+}
+
+.paragrafo {
+	font-size: 22px;
+}
+
+.bold {
+	font-family: 'FordAntenna', 'Arial', sans-serif;
+	font-weight: bold;
+}
+
+ul {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	padding-left: 0;
+}
+
+ul > li {
+	font-family: 'FordAntenna', 'Arial', sans-serif;
+	color: #626262;
+	line-height: 1.5em;
+	font-size: 13px;
+}
+
+h1 { font-size: 56px; }
+h2 { font-size: 42px; }
+h3 { font-size: 36px; }
+h4 { font-size: 28px; }
+h5 { font-size: 24px; }
+h6 { font-size: 18px; }
+
+.mt {
+	margin-top: 30px;
+}
+
+.mb {
+	margin-bottom: 30px;
+}
+
+.container {
+	max-width: 992px;
+}
+
+/*
+ *--------------------------------------------------------------------------
+ * Header
+ *--------------------------------------------------------------------------
+ */
+header {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.nav-spacer {
+    position: relative;
+    height: 127px;
+    display: none;
+}
+
+header .topbar {
+	position: relative;
+	padding: 20px 0 20px 0;
+}
+
+header .topbar .logo {
+	position: absolute;
+	width: 200px;
+	float: left;
+	top: -20px;
+	margin: 0 6px 6px 6px;
+	z-index: 999;
+}
+
+header .topbar .info {
+	display: block;
+	height: auto;
+	width: auto;
+	margin-left: 210px;
+}
+
+header .topbar .info > .telefone {
+	font-family: 'FordAntenna', 'Arial', sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	position: relative;
+	font-size: 28px;
+	color: #FFF;
+}
+
+header .topbar .info > .telefone span {
+	font-family: 'Anothershabby', sans-serif;
+	font-style: italic;
+	margin-right: 5px;
+}
+
+header .topbar .info > .botao {
+	font-family: 'FordAntenna', 'Arial', sans-serif;
+	font-weight: bold;
+	position: relative;
+	font-size: 16px;
+	background-color: #8dc63f;
+	padding: 8px 20px;
+	border-radius: 10px;
+	border: none;
+	float: right;
+	color: #fff;
+	-webkit-transition: all 0.15s ease;
+       -moz-transition: all 0.15s ease;
+         -o-transition: all 0.15s ease;
+        -ms-transition: all 0.15s ease;
+            transition: all 0.15s ease;
+}
+
+header .topbar .info > .botao:hover,
+header .topbar .info > .botao:active {
+	text-decoration: none;
+	background-color: #48b89e;
+}
+
+header .topbar .info > .botao:focus {
+	box-shadow: inset 0 0 8px 1px rgba(0,0,0,0.3);
+}
+
+header .topbar .info > .icones {
+	float: right;
+	padding-left: 16px;
+	vertical-align: middle;
+}
+
+header .topbar .info > .icones a {
+	color: #FFF;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+header .topbar .info > .icones a:hover {
+	color: #0eb48d;
+}
+
+/* Bootstrap Navbar Overide */
+header .navbar {
+	font-family: 'FordAntenna', 'Arial', sans-serif;
+	min-height: auto;
+	height: auto;
+	border-radius: 0;
+	background-color: #fff;
+	border: none;
+	margin: 0;
+}
+
+header .navbar .container {
+	padding-left: 200px;
+}
+
+header .navbar .navbar-nav li.active {
+	background-color: #0eb48d;
+}
+
+header .navbar .navbar-nav a:focus,
+header .navbar .navbar-nav li.active a,
+header .navbar .navbar-nav li:hover a {
+	background-color: #8dc63f;
+	color: #FFF;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+
+header .navbar .navbar-nav li:not(:last-child) a::after {
+	content: '';
+	position: relative;
+	height: 0;
+	left: 15px;
+	border-left: 1px solid #666666;
+}
+
+header .navbar .navbar-nav li a {
+	font-size: 14px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: #666666;
+	-webkit-transition: all 0.1s ease;
+       -moz-transition: all 0.1s ease;
+         -o-transition: all 0.1s ease;
+        -ms-transition: all 0.1s ease;
+            transition: all 0.1s ease;
+}
+
+/*
+ *--------------------------------------------------------------------------
+ * Sections
+ *--------------------------------------------------------------------------
+ */
+section.slider {
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+section.slider img {
+	margin: auto;
+}
+
+section.slider .carousel .carousel-indicators {
+	bottom: -40px;
+}
+
+section.slider .carousel .carousel-indicators li {
+	border-width: 2px;
+	border-color: #344f79;
+	padding: 5px;
+}
+
+section.slider .carousel .carousel-indicators li.active {
+	border-width: 2px;
+	padding: 6px;
+	background-color: #0eb48d;
+}
+
+section.sessao {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+section.sessao:nth-child(odd) {
+	background-color: #fff;
+}
+
+section.sessao:nth-child(even) {
+	background-color: #FFF;
+}
+
+.titulo-normal {
+	color: #0eb48d;
+	font-family: 'FordAntenna', 'Arial', sans-serif;
+	font-weight: bold;
+}
+
+.form-morar .alert {
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+.form-morar .alert i {
+	margin-right: 6px;
+}
+
+.form-morar form {
+	padding: 20px 20px 10px 20px;
+	border-radius: 10px;
+	background-color: #344f79;
+}
+
+.form-morar form legend {
+	color: #FFF;
+	font-family: 'FordAntenna', 'Arial', sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+	color: #0eb48d;
+	border-bottom: none;
+}
+
+.form-morar form button.btn {
+	color: #344f79;
+	background-color: #0eb48d;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-weight: bold;
+	font-family: 'FordAntenna', 'Arial', sans-serif;
+}
+
+.img-zoom {
+	overflow: hidden;
+	-webkit-transition: all 0.1s ease;
+       -moz-transition: all 0.1s ease;
+         -o-transition: all 0.1s ease;
+        -ms-transition: all 0.1s ease;
+            transition: all 0.1s ease;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
+	margin: 5px;
+}
+
+.imagens {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.img-zoom {
+	position: relative;
+	display: block;
+}
+
+.img-zoom:hover .overlay {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.img-zoom .overlay {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+	height: auto;
+	width: auto;
+	background: rgba(255,255,255,.8);
+	box-shadow: 0 0 10px 1000px rgba(255,255,255,.4);
+	text-align: center;
+	opacity: 0;
+	-webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+	padding: 10px;
+}
+
+.img-zoom .overlay i.glyphicon {
+	display: inline-block;
+	text-align: center;
+	font-size: 18px;
+	margin-right: 6px;
+	color: #2F2F2F;
+}
+
+.img-zoom .overlay span {
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #2F2F2F;
+	vertical-align: text-top;
+}
+
+.masonry .img-size-1 {
+	height: 220px;
+	width: 290px;
+}
+
+.masonry .img-size-2 {
+	height: 105px;
+	width: 290px;
+}
+
+.masonry .img-size-3 {
+	height: 105px;
+	width: 140px;
+}
+
+.masonry .img-size-4 {
+	height: 290px;
+	width: 590px;
+}
+
+
+@media screen and (max-width: 992px) {
+
+	header .topbar .info > .telefone {
+		font-size: 18px;
+	}
+
+	header .topbar .info > .botao {
+		font-size: 13px;
+		padding: 8px 20px;
+	}
+
+	header .navbar .navbar-nav li a {
+		font-size: 13px;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	header .navbar .navbar-nav li:not(:last-child) a::after {
+		left: 12px;
+	}
+
+	footer .contato > .telefone {
+		font-size: 32px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	header .topbar .logo {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: auto;
+		background: transparent;
+		text-align: center;
+	}
+
+	header .topbar .logo a {
+		display: block;
+		width: 220px;
+		margin: auto;
+	}
+
+	header .navbar .container {
+	    padding-left: 0px;
+	}
+
+	header .navbar .navbar-toggle {
+		background-color: #EFEFEF;
+	}
+
+	header .navbar .icon-bar {
+		background-color: #006562;
+	}
+
+	header .navbar .navbar-collapse {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	header .navbar .navbar-nav li:not(:last-child) a::after {
+		display: none;
+	}
+
+	header .topbar .info {
+		display: block;
+		width: 100%;
+		margin-left: 0;
+	}
+
+	header .topbar .info > .botao {
+		display: block;
+		margin: auto;
+		clear: both;
+		float: initial;
+		margin-top: 10px;
+	}
+
+	header .topbar .info > .telefone {
+		display: block;
+		text-align: center;
+		font-size: 16px;
+		clear: both;
+		float: initial;
+	}
+
+	header .topbar .info > .icones {
+		display: block;
+		text-align: center;
+		clear: both;
+		float: initial;
+	}
+
+	.masonry .img-size-1,
+	.masonry .img-size-2,
+	.masonry .img-size-3,
+	.masonry .img-size-4 {
+		height: auto;
+		width: 100%;
+	}
+
+
+
+}
