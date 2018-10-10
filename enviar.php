@@ -20,7 +20,7 @@ if($destino) {
 
 
 	// Monta o Corpo da Mensagem
-	$conteudo .= "Um cliente deixou uma mensagem através do formulário 'Quero Morar Aqui' através do site <a href='http://www.villaverdepousoalegre.com.br/'>www.villaverdepousoalegre.com.br/</a>, <br/><br/>\n";
+	$conteudo .= "Um cliente deixou uma mensagem através do formulário 'Consultoria' <br/><br/>\n";
 
 	$conteudo .= "<b>Nome</b>: $nome <br/>\n";
 	$conteudo .= "<b>Email</b>: $email <br/>\n";
