@@ -1,9 +1,3 @@
-/*
- *--------------------------------------------------------------------------
- * Font Faces
- *--------------------------------------------------------------------------
- */
-
 @font-face {
 	font-family: Anothershabby;
 	src: url(../fonts/Anothershabby/Anothershabby_trial.ttf);
@@ -33,11 +27,7 @@
 	src: url(../fonts/FordAntenna/FordAntenna-BoldItalic.otf);
 }
 
-/*
- *--------------------------------------------------------------------------
- * Global
- *--------------------------------------------------------------------------
- */
+
 html, body {
 	height: 100%;
 	width: 100%;
@@ -45,12 +35,6 @@ html, body {
 	padding: 0;
 	font-size: 100%;
 	font-family: 'FordAntenna', 'Arial', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Anothershabby', sans-serif;
-	color: #626262;
-	line-height: 1.2em;
 }
 
 p {
@@ -106,14 +90,10 @@ h6 { font-size: 18px; }
 }
 
 .container {
-	max-width: 992px;
+	max-width: 1030px;
 }
 
-/*
- *--------------------------------------------------------------------------
- * Header
- *--------------------------------------------------------------------------
- */
+
 header {
 	position: relative;
 	width: 100%;
@@ -213,7 +193,6 @@ header .topbar .info > .icones a:hover {
 	color: #0eb48d;
 }
 
-/* Bootstrap Navbar Overide */
 header .navbar {
 	font-family: 'FordAntenna', 'Arial', sans-serif;
 	min-height: auto;
@@ -261,11 +240,6 @@ header .navbar .navbar-nav li a {
             transition: all 0.1s ease;
 }
 
-/*
- *--------------------------------------------------------------------------
- * Sections
- *--------------------------------------------------------------------------
- */
 section.slider {
 	display: block;
 	width: 100%;
@@ -303,7 +277,7 @@ section.sessao {
 }
 
 section.sessao:nth-child(odd) {
-	background-color: #fff;
+	background-color: #efefef;
 }
 
 section.sessao:nth-child(even) {
@@ -365,68 +339,6 @@ section.sessao:nth-child(even) {
 	position: relative;
 	display: block;
 	width: 100%;
-}
-.img-zoom {
-	position: relative;
-	display: block;
-}
-
-.img-zoom:hover .overlay {
-	opacity: 1;
-	cursor: pointer;
-}
-
-.img-zoom .overlay {
-	position: absolute;
-	display: block;
-	bottom: 0;
-	left: 0;
-	height: auto;
-	width: auto;
-	background: rgba(255,255,255,.8);
-	box-shadow: 0 0 10px 1000px rgba(255,255,255,.4);
-	text-align: center;
-	opacity: 0;
-	-webkit-transition: opacity .25s ease;
-	-moz-transition: opacity .25s ease;
-	padding: 10px;
-}
-
-.img-zoom .overlay i.glyphicon {
-	display: inline-block;
-	text-align: center;
-	font-size: 18px;
-	margin-right: 6px;
-	color: #2F2F2F;
-}
-
-.img-zoom .overlay span {
-	display: inline-block;
-	text-align: center;
-	font-size: 14px;
-	font-weight: bold;
-	color: #2F2F2F;
-	vertical-align: text-top;
-}
-
-.masonry .img-size-1 {
-	height: 220px;
-	width: 290px;
-}
-
-.masonry .img-size-2 {
-	height: 105px;
-	width: 290px;
-}
-
-.masonry .img-size-3 {
-	height: 105px;
-	width: 140px;
-}
-
-.masonry .img-size-4 {
-	height: 290px;
-	width: 590px;
 }
 
 
@@ -523,14 +435,167 @@ section.sessao:nth-child(even) {
 		float: initial;
 	}
 
-	.masonry .img-size-1,
-	.masonry .img-size-2,
-	.masonry .img-size-3,
-	.masonry .img-size-4 {
-		height: auto;
-		width: 100%;
+	.botaoagendar{
+		color: #fff;
+		background-color: #8dc63f;
+		border-color: #8dc63f;
 	}
 
+	.consultoria{
+		float: right; 
+		width: 50%;
+		font-size: 12px;
+		font-family: 'FordAntenna', 'Arial', sans-serif;
 
+
+	}
 
 }
+
+.sessao-cases{
+     background-color: #e3e3e3;
+     padding: 50px;
+     padding-top: 395px;
+     margin-top: 155px;
+ }
+
+ .sessao-box .container{
+     position: absolute;
+     left: 24%;
+ }
+
+ .sessao-box .container .row {
+     margin-bottom: 20px;
+ }
+
+ .sessao-box .container .row .box{
+     width: 30%;
+     height: 275px;
+     background-color: #fff;
+     border-radius: 10px;
+     text-align: center;
+     padding: 30px;
+     margin-left: 25px;
+ }
+
+ .sessao-box .container .row .box img{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .sessao-box .container .row .box span{
+     font-size: 14px;
+     color: #0291ff;
+     text-align: center;
+ }
+
+ .bem-vindo{
+     display: block;
+     text-align: center;
+ }
+
+ .bem-vindo img{
+     float: left;
+     margin-left: 10%;
+     width: 60%;
+ }
+
+ .bem-vindo button{
+     position: absolute;
+     top: 59%;
+     left: 51.8%;
+ }
+
+ .bem-vindo h1{
+     position: absolute;
+     font-size: 38px;
+     width: 225px;
+     text-align: left;
+     font-weight: bold;
+     left: 52%;
+     top: 25%;
+ }
+
+ .bem-vindo h3{
+     position: absolute;
+     left: 52%;
+     top: 37%;
+     width: 370px;
+     text-align: left;
+     font-size: 12px;
+     color: #666666;
+ }
+ 	
+ 	.titulo2{
+		text-align: center; 
+		font-size: 18px;
+	}
+
+	.titulo3{
+		text-align: center; 
+		font-size: 18px;
+		color: #336699;
+	}
+
+	.titulo4{
+		text-align: center; 
+		font-size: 14px;
+		color: #666666;
+	}
+
+	.telefone2{
+		text-align: left; 
+		font-size: 18px;
+		color: #3399ff;
+		margin-top: 130px;
+		margin-left: 10px;
+	}
+
+	.telefone3{
+		text-align: left; 
+		font-size: 16px;
+		color: #666666;
+		margin-left: 10px;
+	}
+
+	.telefone4{
+		text-align: left; 
+		font-size: 16px;
+		color: #858585;
+		margin-left: 10px;
+	}
+
+	.botao2{
+		margin-right: 800px;
+	}
+
+	.rodape-contato{ 
+		border-left:2px solid #e3e3e3;
+		height: 300px;
+	}
+
+	.sessao-box2{
+     	background-color: #EFEFEF;
+     	padding: 10px;
+     	border-radius: 20px;
+     	margin-bottom: 30px;
+
+ 	}
+
+ 	.cases1 h1{
+		text-align: center; 
+		font-size: 38px;
+		color: #000;
+	}
+
+	.cases2{
+		text-align: center; 
+		font-size: 14px;
+		color: #666666;
+	}
+
+	.rodape{
+		background-color: #EFEFEF;
+	}
+
